@@ -71,8 +71,15 @@ Actions must conform to the following schema:
 	duration: ?integer;
 	score: ?float;
 ```
-
-- **actionId** - this id allows us to map actions done by different users to each other. Therefore, for the same action in your application (for example, the same question or the same 
+Field | Type | Description
+---: | --- | ---
+**actionId** `required` | string |  a **unique identifier** for this action defined by you =.  It must be in **UUID format**. This id allows us to map actions done by different users to each other. Therefore, for the same action in your application (for example, the same question or the same click) you should attach the same actionId. This is fundamental to how the Zzish dashboards work and how we can provide teachers with insight from your app.
+**name** `required` | string |  name of the action. This is anything that a **teacher can read and understand**. For example, the text of the question answered or the name of the action completed.
+**correct** `optional` | boolean | only applies to actions which can have both a positive and negative result, such as answering a question.
+**response** `optional` | string | the student's response to this action. For example the text entered by the student to complete this action.
+**timestamp** `optional` | integer | UNIX timestamp
+**duration** `optional` | integer |  time in **milliseconds**. How long the user has taken to complete this action. If possible, it is **highly recommended** to include it as this allows Zzish to guess how confident a student was when completing this action.
+**score** `optional` | float | blah
 
 
 
