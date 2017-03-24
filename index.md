@@ -59,7 +59,7 @@ You can send an array of actions of minimum length 1 in this posts' body. This i
 }]	
 ```
 
-####Action Schema
+#### Action Schema
 
 Actions must conform to the following schema: 
 ```
@@ -71,6 +71,7 @@ Actions must conform to the following schema:
 	duration: ?integer;
 	score: ?float;
 ```
+
 Field | Type | Description
 ---: | --- | ---
 **actionId** `required` | string |  a **unique identifier** for this action defined by you =.  It must be in **UUID format**. This id allows us to map actions done by different users to one another. Therefore, for the same action in your application (for example, the same question or the same click) you should attach the same actionId. This is fundamental to how the Zzish dashboards work and how we can provide teachers with insight from your app.
