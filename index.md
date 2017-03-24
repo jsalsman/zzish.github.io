@@ -87,23 +87,3 @@ Field | Type | Description
 When you first send an action to the Zzish Api, it creates an **Action Definition** for that actionId. This is to ensure that the data from the students is consistent and allows us to show teachers insightful information about your app. For example, we can compare students to one another.
 
 When the first action is sent, we look at which optional fields you have provided us. To ensure consistency across our dashboards, any new action tied to the same actionId must include at least those optional fields. Otherwise it will be rejected.
-
-<table>
-          <tbody>
-        <tr>
-            <th>ID</th>
-        <th>Name</th>
-        <th>Rank</th>
-          </tr>
-          <tr>
-            <td>1</td>
-        <td>Tom Preston-Werner</td>
-        <td>Awesome</td>
-          </tr>
-          <tr>
-            <td>2</td>
-        <td>Albert Einstein</td>
-        <td>Nearly as awesome</td>
-          </tr>
-        </tbody>
-        </table>
