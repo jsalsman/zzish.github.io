@@ -31,7 +31,7 @@ If your Api Key and Token are valid you will receive a successful response in th
 	"now": 1490030158728
 }
 ```
-The **Authorisation token** is what allows you to call the Zzish Api for this user and this app. 
+The **Authorisation token** is what allows you to call the Zzish Api for this user and this app.
 
 You can generate tokens on the developer dashboard for testing purposes as shown below:
 
@@ -56,12 +56,12 @@ You can send an array of actions of minimum length 1 in this posts' body. This i
 	"timestamp": 1490030158728,
 	"duration": 4000,
 	"score": 0.75
-}]	
+}]
 ```
 
 #### Action Schema
 
-Actions must conform to the following schema: 
+Actions must conform to the following schema:
 ```
 	actionId: string;
 	name: string;
@@ -87,3 +87,23 @@ Field | Type | Description
 When you first send an action to the Zzish Api, it creates an **Action Definition** for that actionId. This is to ensure that the data from the students is consistent and allows us to show teachers insightful information about your app. For example, we can compare students to one another.
 
 When the first action is sent, we look at which optional fields you have provided us. To ensure consistency across our dashboards, any new action tied to the same actionId must include at least those optional fields. Otherwise it will be rejected.
+
+<table>
+          <tbody>
+        <tr>
+            <th>ID</th>
+        <th>Name</th>
+        <th>Rank</th>
+          </tr>
+          <tr>
+            <td>1</td>
+        <td>Tom Preston-Werner</td>
+        <td>Awesome</td>
+          </tr>
+          <tr>
+            <td>2</td>
+        <td>Albert Einstein</td>
+        <td>Nearly as awesome</td>
+          </tr>
+        </tbody>
+        </table>
