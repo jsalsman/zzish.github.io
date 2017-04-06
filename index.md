@@ -14,9 +14,8 @@ You can use this token to authenticate the app to be able to send events to Zzis
 Do a GET request to this endpoint to get the Authorization token.
 
 ```
-${API_URL}/api/auth/${tokenid}
+https://api-v2.zzish.com/api/auth/${tokenid}
 ```
->**Note**: API_URL is *test-api-v2.zzish.com* for test purposes
 
 In this GET request you must set your X-Api-Key header to the key provided in the settings section of the developer dashboard as explained in the **Getting Started** section above.
 
@@ -57,6 +56,10 @@ You can send an array of actions of minimum length 1 in this posts' body. This i
 	"duration": 4000,
 	"score": 0.75
 }]
+```
+To send the actions do a POST to the following api endpoint:
+```
+https://api-v2.zzish.com/api/actions
 ```
 
 #### Action Schema
