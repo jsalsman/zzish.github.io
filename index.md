@@ -1,4 +1,6 @@
-## Zzish Developer Docs
+## Zzish Developer Docs (DEPRECATED)
+
+PLEASE NOTE: The documentation below has been depricated and developers should watch this page for updates soon. Thank you for your patience.
 
 ### Getting Started
 
